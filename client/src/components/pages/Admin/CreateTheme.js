@@ -38,7 +38,7 @@ const CreateTheme = () => {
       await fetch(
         // "https://myknot-official.herokuapp.com/api/themes/createtheme",
         // "http://localhost:3001/api/themes/createtheme",
-        "https://myknot-official.vercel.app/api/themes/createtheme",
+        `${process.env.REACT_APP_API_URL}/api/themes/createtheme`,
         {
           method: "POST",
           body: JSON.stringify({
@@ -72,7 +72,7 @@ const CreateTheme = () => {
     try {
       // await fetch("https://myknot-official.herokuapp.com/api/img/upload", {
       // await fetch("http://localhost:3001/api/img/upload", {
-      await fetch("https://myknot-official.vercel.app/api/img/upload", {
+      await fetch(`${process.env.REACT_APP_API_URL}/api/img/upload`, {
         method: "POST",
         body: JSON.stringify({ data: base64EncodedImage }),
         headers: { "Content-type": "application/json" },
@@ -93,7 +93,7 @@ const CreateTheme = () => {
 
   async function getAllCategories(){
     // await fetch("http://localhost:3001/api/category/getallcategories",{
-    await fetch("https://myknot-official.vercel.app/api/category/getallcategories",{
+    await fetch(`${process.env.REACT_APP_API_URL}/api/category/getallcategories`,{
       method:"GET",
       headers: { "Content-type": "application/json" }
     }).then((res)=>{

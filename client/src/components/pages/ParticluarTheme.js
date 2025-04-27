@@ -19,7 +19,7 @@ const ParticluarTheme = () => {
   useEffect(() => {
     // fetch(`https://myknot-official.herokuapp.com/api/themes/getonetheme`, {
     // fetch(`http://localhost:3001/api/themes/getonetheme`, {
-    fetch(`https://myknot-official.vercel.app/api/themes/getonetheme`, {
+    fetch(`${process.env.REACT_APP_API_URL}/api/themes/getonetheme`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -61,7 +61,7 @@ const ParticluarTheme = () => {
       }else{
         setShow(false)
         try {
-          await fetch(`https://myknot-official.vercel.app/api/auth/getuserdetails`, {
+          await fetch(`${process.env.REACT_APP_API_URL}/api/auth/getuserdetails`, {
           // await fetch(`http://localhost:3001/api/auth/getuserdetails`, {
           // await fetch(`https://myknot-official.herokuapp.com/api/auth/getuserdetails`, {
           method: "GET",
@@ -78,7 +78,7 @@ const ParticluarTheme = () => {
               // console.log("data",data.user.name)
               
               setTimeout(()=>{
-                fetch(`https://myknot-official.vercel.app/api/themes/createreview`, {
+                fetch(`${process.env.REACT_APP_API_URL}/api/themes/createreview`, {
                 // fetch(`http://localhost:3001/api/themes/createreview`, {
                 // fetch(`https://myknot-official.herokuapp.com/api/themes/createreview`, {
               method: "POST",
@@ -123,7 +123,7 @@ const ParticluarTheme = () => {
   function addtoCart() {
     try {
       if (userID) {
-        fetch("https://myknot-official.vercel.app/api/cart/addtocart", {
+        fetch(`${process.env.REACT_APP_API_URL}/api/cart/addtocart`, {
         // fetch("http://localhost:3001/api/cart/addtocart", {
         // fetch("https://myknot-official.herokuapp.com/api/cart/addtocart", {
           method: "POST",

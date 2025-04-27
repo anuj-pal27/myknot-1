@@ -10,7 +10,7 @@ export const getAllThemes=()=>async(dispatch)=>{
         })
         // const {data}=await axios.get("/api/themes/getallthemes")
 
-        let link="https://myknot-official.herokuapp.com/api/themes/getallthemes"
+        let link=`${process.env.REACT_APP_API_URL}/api/themes/getallthemes`
 
         const {data}=await axios.get(link)
         // console.log(data)

@@ -25,7 +25,7 @@ const Productlist = () => {
   async function updateTheme(themeID){
     try {
       
-      await fetch(`https://myknot-official.vercel.app/api/themes/getonetheme`, {
+      await fetch(`${process.env.REACT_APP_API_URL}/api/themes/getonetheme`, {
       // await fetch(`http://localhost:3001/api/themes/getonetheme`, {
         method: "GET",
         headers: {
@@ -52,7 +52,7 @@ const Productlist = () => {
   async function deleteTheme(themeID){
     try {
        if(themeID){
-        await fetch("https://myknot-official.vercel.app/api/themes/deletetheme",{
+        await fetch(`${process.env.REACT_APP_API_URL}/api/themes/deletetheme`,{
         // await fetch("http://localhost:3001/api/themes/deletetheme",{
             method:"DELETE",
             headers: { "Content-type": "application/json",themeID },
@@ -75,7 +75,7 @@ const Productlist = () => {
   async function submitHandlerUpdate(){
     try {
       
-      await fetch(`https://myknot-official.vercel.app/api/themes/updatetheme`, {
+      await fetch(`${process.env.REACT_APP_API_URL}/api/themes/updatetheme`, {
       // await fetch(`http://localhost:3001/api/themes/updatetheme`, {
         method: "PUT",
         headers: {

@@ -26,7 +26,7 @@ const Login = () => {
     }
     try {
       // await fetch("https://myknot-official.herokuapp.com/api/auth/login",{
-      await fetch("http://localhost:3001/api/auth/login", {
+      await fetch(`${process.env.REACT_APP_API_URL}/api/auth/login`, {
       // await fetch("https://myknot-official.vercel.app/api/auth/login", {
         method: "POST",
         body: JSON.stringify({ email, password }),

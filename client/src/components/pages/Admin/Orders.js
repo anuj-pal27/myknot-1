@@ -11,7 +11,7 @@ const Productlist = () => {
   async function getAllOrders(){
    try {
     // await fetch("http://localhost:3001/api/orders/getallorders",{
-    await fetch("https://myknot-official.vercel.app/api/orders/getallorders",{
+    await fetch(`${process.env.REACT_APP_API_URL}/api/orders/getallorders`,{
         method:"GET",
         headers: { "Content-type": "application/json"},
       }).then((res)=>{

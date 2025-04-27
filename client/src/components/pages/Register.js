@@ -32,7 +32,7 @@ const Register = () => {
         try {
           // await fetch("https://myknot-official.herokuapp.com/api/auth/register",{
           // await fetch("http://localhost:3001/api/auth/register", {
-          await fetch("https://myknot-official.vercel.app/api/auth/register", {
+          await fetch(`${process.env.REACT_APP_API_URL}/api/auth/register`, {
             method: "POST",
             body: JSON.stringify({
               email,

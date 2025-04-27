@@ -22,7 +22,7 @@ const Card = ({ data }) => {
   function addtoCart() {
     try {
       if (userID) {
-        fetch("https://myknot-official.vercel.app/api/cart/addtocart", {
+        fetch(`${process.env.REACT_APP_API_URL}/api/cart/addtocart`, {
         // fetch("http://localhost:3001/api/cart/addtocart", {
         // fetch("https://myknot-official.herokuapp.com/api/cart/addtocart", {
           method: "POST",
