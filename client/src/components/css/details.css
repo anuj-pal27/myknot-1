@@ -1,0 +1,112 @@
+.d-one{
+    width: 80%;
+    height: 600px;
+    /* border: 1px solid red; */
+    margin: auto;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.7);
+    border-radius: 12px;
+    margin-top: 15px;
+}
+.d-two{
+    width: 100%;
+    height: 12%;
+    height: auto;
+    /* height: 0; */
+    /* border: 1px solid blue; */
+    text-align: center;
+}
+.d-h1{
+    /* margin: 1% 0%; */
+    /* margin-top: 5%; */
+}
+.d-three{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 87%;
+}
+
+.d-three-childone{
+    width: 30%;
+    border-right: 3px solid teal;
+    height: 100%;
+    border-top: 5px solid teal;
+}
+.d-three-childtwo{
+    width: 69%;
+    /* border: 1px solid red; */
+    height: 100%;
+    border-top: 5px solid teal;
+}
+.d-tc-one{
+    width: 100%;
+    height: 24%;
+    border: 1px solid teal;
+    text-align: center;
+}
+
+.d-btn2{
+    margin-left: 40%;
+    margin-top: 5%;
+    background-color: #c7dcdc;
+    border: 2px solid teal;
+    cursor: pointer;
+    height: 7%;
+    width: 23%;
+}
+
+.dd-one{
+    width: 100%;
+    height: 600px;
+    border: 1px solid violet;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    z-index: 3;
+    background-color: rgb(0, 0, 0,0.8);
+    /* opacity: 81%; */
+}
+.dd-two{
+    width: 34%;
+    margin: auto;
+    height: 55%;
+    text-align: center;
+    border: 1px solid green;
+    margin: 12% auto;
+    border-radius: 15px;
+    background-color: white;
+}
+.d-h4-one{
+    margin: 3% 0%;
+    font-size: 25px;
+    border-bottom: 5px solid teal;
+}
+.main-set{
+    width: 100vw;
+    height: 100vh;
+}
+
+.dd-button{
+    display: block;
+    margin-left: 42%;
+    width: 20%;
+    height: 9%;
+    background-color: #cfd9d9;
+    border: 2px solid teal;
+    cursor: pointer;
+}
+.d-button-update{
+    width: 15%;
+    height: 20%;
+    background-color: #c7dcdc;
+    border: 2px solid teal;
+    cursor: pointer;
+
+}
+
+.d-h2{
+    text-align: center;
+    margin-top: 53%;
+}
